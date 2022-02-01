@@ -7,11 +7,13 @@ from pcdet.utils import common_utils
 from .dataset import DatasetTemplate
 from .kitti.kitti_dataset import KittiDataset
 from .waymo.waymo_dataset import WaymoDataset
+from .tree.tree_dataset import TreeDataset # added for tree
 
 __all__ = {
     'DatasetTemplate': DatasetTemplate,
     'KittiDataset': KittiDataset,
     'WaymoDataset': WaymoDataset,
+    'TreeDataset': TreeDataset # added for tree
 }
 
 class DistributedSampler(_DistributedSampler):
